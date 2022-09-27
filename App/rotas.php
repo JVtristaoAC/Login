@@ -18,8 +18,12 @@ switch ($url)
         LoginController::logout();
     break;
 
+    case '/login/connected':
+        LoginController::connected();
+        break;
+
     case '/':
-        echo "página inicial";
+        LoginController::index();
         break;
 
     default:

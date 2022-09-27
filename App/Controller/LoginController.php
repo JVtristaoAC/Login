@@ -23,10 +23,16 @@ class LoginController extends Controller
 
             $_SESSION['usuario_logado'] = $usuario_logado;
 
-            header("Location: /");
+            header("Location: /login/connected");
 
         } else
             header("Location: /login?erro=true");
+    }
+
+    public static function connected()
+    {
+        parent::isAuthenticated();
+        parent::render('Login/Connected');
     }
 
     public static function logout()
