@@ -12,7 +12,7 @@
         <section class="login">
         <Form action="/login/auth" method="post">
             <h1 class="login__title">Fazer login</h1>
-            
+            </Form>
         </section>
     </main>
 </body>
