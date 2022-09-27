@@ -9,8 +9,8 @@
 </head>
 <body>
     <main>
-        
-        <Form class="login" action="/login/auth" method="post">
+        <section class="login">
+        <Form action="/login/auth" method="post">
             <h1 class="login__title">Fazer login</h1>
             
         </section>
