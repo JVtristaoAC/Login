@@ -1,7 +1,4 @@
-<?php
-
-?>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,9 +6,11 @@
     <link rel="stylesheet" href="/View/Modules/Login/style.css"> 
     <title>Document</title>
 </head>
-<body class="Fundo">
-<img src="https://preview.redd.it/a5t5lyy7pui81.jpg?auto=webp&s=106e7b43f584fcb5640b06062ab0f7057582dba5" class="wallpaper"/>
-
+ <body class="Fundo">
+ <img src="https://preview.redd.it/a5t5lyy7pui81.jpg?auto=webp&s=106e7b43f584fcb5640b06062ab0f7057582dba5" class="wallpaper"/>
+ <audio>
+  <source src="You_Died.mp3" type="audio/mpeg">
+ </audio>
 </body>
 </html>
 
