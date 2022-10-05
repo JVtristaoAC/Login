@@ -7,3 +7,5 @@ create table if not exists usuario(
     email varchar(100) not null unique,
     senha varchar(100) not null
 );
+
+insert into usuario (nome, email, senha) values ("Portugal", "Portugal", sha1("1234");
