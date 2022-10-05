@@ -15,7 +15,7 @@
           <h1 class="login__title">Fazer login</h1>
 
             <label class="login__label">
-                <span>E-Mail</span>
+                <span>E-mail</span>
                 <input type="text" name="email" class="input">
             </label>
 
