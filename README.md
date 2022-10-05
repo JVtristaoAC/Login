@@ -11,5 +11,5 @@
 
 ###  Conta criada:
 
-- <b>Username: </b> Portugal <br>
+- <b>E-mail: </b> Portugal <br>
 - <b>Senha: </b> 1234
