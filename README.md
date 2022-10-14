@@ -11,5 +11,5 @@
 
 ###  Create Accont:
 
-- <b>User(Nome do usuario): </b> Portugal <br>
-- <b>Password(Senha): </b> 1234
+- <b>User (Nome do usuario): </b> Portugal <br>
+- <b>Password (Senha): </b> 1234
