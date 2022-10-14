@@ -1,15 +1,15 @@
-# Login estilizado Dark souls
+# Login Dark souls
 ![image](https://user-images.githubusercontent.com/72676389/192649069-3a516ae6-ef55-4824-895a-87aa48940a3a.png)
 
 
-## Sobre o projeto:
-### Rotas disponíveis:
+## About The Project:
+### Routes:
 
-- <b>"/login" </b> - Tela inicial para fazer o login <br>
-- <b> "/login/connected"</b> - Tela "You Died" quando o login é acertado <br>
-- <b>"/logout"</b> - Quando logado escreva essa URL para Deslogar (redireciona para a tela de login)
+- <b>"/login" </b> - Inicial page <br>
+- <b> "/login/connected"</b> - connected page <br>
+- <b>"/logout"</b> - desconected page, redirect for the inicial page
 
-###  Conta criada:
+###  Create Accont:
 
-- <b>E-mail: </b> Portugal <br>
-- <b>Senha: </b> 1234
+- <b>User(Nome do usuario): </b> Portugal <br>
+- <b>Password(Senha): </b> 1234
