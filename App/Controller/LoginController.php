@@ -6,8 +6,46 @@ use App\Model\LoginModel;
 class LoginController extends Controller
 {
     public static function index()
-    {
+    {  
         parent::render('Login/FormLogin');
+    }
+
+
+
+    public static function form()
+    {
+        $model = new LoginModel();
+            
+        if(isset($_GET['id'])) 
+        $model = $model->getById( (int) $_GET['id']);
+        
+        include VIEWS . 'Login/frmUser.php';
+
+    }
+
+    public static function save()
+    {
+
+        $model = new LoginModel();
+        $model->id = $_POST['id'];
+        $model->nome = $_POST['nome'];
+        $model->email = $_POST['email'];
+        $model->senha = $_POST['senha'];
+
+        $model->save();
+
+        header("Location: /login");
+    }
+
+    public static function delete()
+    {
+
+        $model = new LoginModel();
+
+         if(isset($_GET['id'])) 
+        $model->delete( (int) $_GET['id']);
+
+        header("Location: /login/connected");
     }
 
     public static function auth()
@@ -29,10 +67,14 @@ class LoginController extends Controller
             header("Location: /login?erro=true");
     }
 
+
     public static function connected()
     {
         parent::isAuthenticated();
-        parent::render('Login/Connected');
+        $model = new LoginModel();
+        $model->getAllRows();
+
+        parent::render('Login/Connected', $model);
     }
 
     public static function logout()

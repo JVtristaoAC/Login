@@ -14,6 +14,19 @@ switch ($url)
         LoginController::auth();
     break;
 
+    case '/login/delete':
+        LoginController::delete();
+    break;
+
+
+    case '/login/form':
+        LoginController::form();
+    break;
+
+    case '/login/form/save':
+        LoginController::save();
+    break;
+
     case '/logout':
         LoginController::logout();
     break;

@@ -1,3 +1,4 @@
+drop database if exists db_mvc;
 create database if not exists db_mvc;
 use db_mvc;
 
@@ -8,4 +9,4 @@ create table if not exists usuario(
     senha varchar(100) not null
 );
 
-insert into usuario (nome, email, senha) values ("Portugal", "Portugal", sha1("1234");
+insert into usuario (nome, email, senha) values ("Portugal", "Portugal", sha1("1234"));

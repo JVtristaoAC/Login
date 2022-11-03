@@ -49,7 +49,7 @@
             </button>
 
             <a href="#" class="login__link">nao consegue iniciar sessão?</a>
-            <a href="#" class="login__link">criar conta</a>
+            <a href="/login/form" class="login__link">criar conta</a>
             </div>
             
         </Form>

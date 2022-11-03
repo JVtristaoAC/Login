@@ -6,7 +6,7 @@ use App\DAO\LoginDAO;
 
 class LoginModel extends Model
 {
-    public $id, $nome, $email, $senha;
+    public $id, $nome, $email, $senha, $rows;
 
     public function autenticar()
     {
@@ -19,4 +19,54 @@ class LoginModel extends Model
         else
             null;
     }
+
+    public function save()
+    {
+        include 'DAO/LoginDAO.php';
+
+        $dao = new LoginDAO();
+
+
+        if(empty($this->id))
+        {
+   
+           $dao->insert($this);
+   
+       }else
+       {
+        $dao->update($this);
+       }
+    }
+
+
+    public function getAllRows()
+    {
+        include 'DAO/LoginDAO.php';
+
+        $dao = new LoginDAO();
+
+        $this->rows = $dao->select();
+
+    }
+
+    public function getById(int $id)
+    {
+       include 'DAO/LoginDAO.php';
+       $dao = new LoginDAO();
+    
+
+       $obj = $dao->selectById($id);
+       return($obj) ? $obj : new LoginModel();
+    }
+
+
+    public function delete(int $id)
+    {
+        include 'DAO/LoginDAO.php';
+
+        $dao = new LoginDAO();
+
+        $dao->delete($id);
+    }
+
 }
