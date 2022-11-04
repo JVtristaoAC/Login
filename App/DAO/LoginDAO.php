@@ -74,7 +74,7 @@ class LoginDAO extends DAO
         $stmt->bindValue(1, $id);
         $stmt->execute();
 
-        return $stmt->fetchObject("LoginModel");
+        return $stmt->fetchObject("App\Model\LoginModel");
     }
 
     public function delete(int $id)

@@ -17,7 +17,7 @@ class LoginController extends Controller
         $model = new LoginModel();
             
         if(isset($_GET['id'])) 
-        $model = $model->getById( (int) $_GET['id']);
+         $model->getById( (int) $_GET['id']);
         
         include VIEWS . 'Login/frmUser.php';
 
@@ -34,7 +34,7 @@ class LoginController extends Controller
 
         $model->save();
 
-        header("Location: /login");
+        header("Location: /login/connected");
     }
 
     public static function delete()
